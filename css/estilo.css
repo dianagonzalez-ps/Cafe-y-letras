@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --crema:  rgb(255, 254, 242);
+    --beige: #F1D6AB;
+    --rosa: #E2C2B9;
+    --verdeclaro: #B4C6A6;
+    --verdeoscuro: #38470B;
+    --cafe: #41341F;
+    --cafeclaro: #A0855B;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-size: small;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: var(--crema);
+    width: auto;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-i {
+    font-size: 1rem;
+    margin: 0 2rem;
+}
+.navbar {
+    width: 100%;
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-list a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-search {
+    height: 1.5rem;
+    display: flex;
+    justify-content: end;
+}
+/*coloqué de una vez el menu hamburguesa xd pero para ir mirando como quedaria la maquetacion movil, asi que seria temporal*/
+.collapsible {
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+.active, .collapsible:hover {
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+  }
+
+.content {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+}
+
+
+footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+    height: fit-content;
+    
+}
+.foot {
+    margin-bottom: 1rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot img {
+    max-width: 180px;
+    width: 100%;
+}
+.foot a {
+    text-decoration: none;
+    color: var(--verdeclaro);
+}
+.socialnet {
+    margin-top: 1rem;
+}
+
+
+
+/*RESOLUCION TABLETAS.... es plantilla de otro ejercicio, solo para ir avanzando*/
+
+@media screen and (min-width:768px){
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: navbar;
+    }
+    main {
+        grid-area: main;
+    }
+    section {
+        grid-area: section;
+    } 
+    footer {
+        grid-area: footer;
+    }
+    .container {
+        display: grid;
+        grid-template: 
+        "header" 
+        "navbar" 
+        "main" auto
+        "section" 
+        "footer";
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header" 
+        "navbar navbar" 
+        "main sidebar" 
+        "footer footer";
+    }
+    
+}
+
+/*RESOLUCION MEDIA*/
+
+@media screen and (min-width:1024px){
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header" 
+        "navbar navbar navbar" 
+        "footer footer footer";
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--verdeoscuro);
+        color: var(--verdeclaro);
+        height: fit-content;
+        
+    }
+}
+
+/*RESOLUCION TABLETAS*/
+
+@media screen and (min-width:1200px){
+
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        grid-template: 
+        "header header header" 
+        "navbar navbar navbar" auto
+        "footer footer footer"; 
+    }
+}
+
+
+.label{
+    display: block;
+}
+
+input,button{
+    border-radius: 5px;
+    box-shadow: none;
+    font:inherit;
+    width:100% ;
+}
+
+.login-form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    max-width: 90%;
+    background-color: #aa936fb0;
+    display: grid;
+    grid: auto / 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    padding: 3rem;
+    box-shadow: 0 0.75rem 2rem 0 var(--cafeclaro);
+    font-size: 1.125rem;
+    border-radius: 18px;
+    align-items: column;
+}
+
+.input-label{
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.input-text{
+    padding: 0.75rem;
+    border: 2px solid white;
+    border-radius: -25rem; 
+}
+
+.input-button {
+    cursor:pointer;
+    background-color: #38470B;
+    box-shadow: grey;
+    border-radius: -25rem;
+    grid-column: span -5;
+    height: 50px;
+    width: 100%;
+
+}
+
+.input-button a{
+    color: var(--beige);
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    padding: 30%;
+}
+
+.span-2{
+    grid-column: span 5;
+}
