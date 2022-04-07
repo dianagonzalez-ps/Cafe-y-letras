@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --crema:  rgb(255, 254, 242);
+    --beige: #F1D6AB;
+    --rosa: #E2C2B9;
+    --verdeclaro: #B4C6A6;
+    --verdeoscuro: #38470B;
+    --cafe: #41341F;
+    --cafeclaro: #A0855B;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-size: small;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: var(--crema);
+    width: auto;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-i {
+    font-size: 1rem;
+    margin: 0 2rem;
+}
+.navbar {
+    width: 100%;
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-list a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-search {
+    height: 1.5rem;
+    display: flex;
+    justify-content: end;
+}
+/*coloqué de una vez el menu hamburguesa xd pero para ir mirando como quedaria la maquetacion movil, asi que seria temporal*/
+.collapsible {
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+.active, .collapsible:hover {
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+  }
+
+.content {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+  }
+  .reserva {
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caja-form {
+    margin: 0 auto;
+    max-width: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+    height: fit-content;
+    
+}
+.foot {
+    margin-bottom: 1rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot img {
+    max-width: 180px;
+    width: 100%;
+}
+.foot a {
+    text-decoration: none;
+    color: var(--verdeclaro);
+}
+.socialnet {
+    margin-top: 1rem;
+}
+
+
+
+/*RESOLUCION TABLETAS.... es plantilla de otro ejercicio, solo para ir avanzando*/
+
+@media screen and (min-width:768px){
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: navbar;
+    }
+    main {
+        grid-area: main;
+    }
+    section {
+        grid-area: section;
+    } 
+    footer {
+        grid-area: footer;
+    }
+    .container {
+        display: grid;
+        grid-template: 
+        "header" 
+        "navbar" 
+        "main" 
+        "section" 
+        "footer";
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+       
+    }
+    
+}
+
+/*RESOLUCION MEDIA*/
+
+@media screen and (min-width:1024px){
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+      
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--verdeoscuro);
+        color: var(--verdeclaro);
+        height: fit-content;
+        
+    }
+}
+
+/*RESOLUCION TABLETAS*/
+
+@media screen and (min-width:1200px){
+
+    .container {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+}
