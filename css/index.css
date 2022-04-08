@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 :root {
     --crema:  rgb(255, 254, 242);
     --beige: #F1D6AB;
@@ -17,14 +16,29 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-p {
-    font-size: small;
-}
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 
+    "header" 
+    "navbar" 
+    "main" auto
+    "section" 
+    "footer";
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+input,button{
+    border-radius: 5px;
+    box-shadow: none;
+    font:inherit;
+    width:100% ;
 }
 header {
+    grid-area: header;
     background-color: var(--crema);
     width: auto;
     height: 5rem;
@@ -37,8 +51,14 @@ header {
     margin: 0 auto;
 }
 .header-i {
-    font-size: 1rem;
-    margin: 0 2rem;
+    font-size: large;
+    margin: 0 1rem;
+}
+.header-i i {
+    padding: 0 1rem;
+}
+nav {
+    grid-area: navbar;
 }
 .navbar {
     width: 100%;
@@ -49,53 +69,36 @@ header {
     display: flex;
     align-items: center;
 }
-.navbar-list a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-}
 .navbar-search {
     height: 1.5rem;
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
-/*coloqué de una vez el menu hamburguesa xd pero para ir mirando como quedaria la maquetacion movil, asi que seria temporal*/
-.collapsible {
-    background-color: var(--verdeclaro);
-    color: var(--verdeoscuro);
-    cursor: pointer;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-  }
-  
-.active, .collapsible:hover {
-    background-color: var(--verdeoscuro);
-    color: var(--verdeclaro);
-  }
-
+.navbar-search i {
+    padding: 0 0.5rem;
+}
 .content {
+    display: flex;
+    flex-direction: row;
     padding: 0 1rem;
-    display: none;
-    overflow: hidden;
     background-color: var(--verdeclaro);
     color: var(--verdeoscuro);
-  }
-  .reserva {
-    background-color: var(--beige);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-.caja-form {
-    margin: 0 auto;
-    max-width: 500px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
+.content a {
+    padding: 0 0.5rem;
+    color: var(--verdeoscuro);
+    text-decoration: none;
 }
+
+main {
+    grid-area: main;
+}
+section {
+    grid-area: section;
+} 
+footer {
+    grid-area: footer;
+    }
 
 footer {
     padding: 2rem;
@@ -107,7 +110,7 @@ footer {
     
 }
 .foot {
-    margin-bottom: 1rem;
+    padding-top:1rem;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -122,45 +125,31 @@ footer {
     color: var(--verdeclaro);
 }
 .socialnet {
+    font-size: larger;
     margin-top: 1rem;
 }
 
 
 
-/*RESOLUCION TABLETAS.... es plantilla de otro ejercicio, solo para ir avanzando*/
+/*RESOLUCION TABLETAS.*/
 
 @media screen and (min-width:768px){
-    header {
-        grid-area: header;
-    }
-    nav {
-        grid-area: navbar;
-    }
-    main {
-        grid-area: main;
-    }
-    section {
-        grid-area: section;
-    } 
-    footer {
-        grid-area: footer;
-    }
-    .container {
-        display: grid;
-        grid-template: 
-        "header" 
-        "navbar" 
-        "main" 
-        "section" 
-        "footer";
-        text-align: center;
-    }
     .container {
         grid-template-columns: auto;
         grid-template-rows: auto;
-       
+        grid-template-areas: 
+        "header header" 
+        "navbar navbar" 
+        "main main" 
+        "footer footer";
     }
-    
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--verdeoscuro);
+        color: var(--verdeclaro);
+        height: fit-content; 
+    }
 }
 
 /*RESOLUCION MEDIA*/
@@ -169,24 +158,26 @@ footer {
     .container {
         grid-template-columns: auto;
         grid-template-rows: auto;
-      
+        grid-template-areas: 
+        "header header header" 
+        "navbar navbar navbar"
+        "main main main" 
+        "footer footer footer";
     }
-    footer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        background-color: var(--verdeoscuro);
-        color: var(--verdeclaro);
-        height: fit-content;
-        
-    }
+   
 }
 
-/*RESOLUCION TABLETAS*/
+/*RESOLUCION 1200*/
 
 @media screen and (min-width:1200px){
 
     .container {
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 1200px;
+        grid-template: 
+        "header header header" 
+        "navbar navbar navbar"
+        "main main main"
+        "footer footer footer"; 
     }
 }
