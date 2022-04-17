@@ -5,76 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Café literario">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/usuario.css">   
-    <script src="https://kit.fontawesome.com/ca7c98bafe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/usuario.css">   
+    <script src="https://kit.fontawesome.com/4fcb02d961.js" crossorigin="anonymous"></script>
     <title>Cafe y Letras</title>
-    <link type="image/x-icon" href="img/icono.svg" rel="icon">
+    <link type="image/x-icon" href="/src/utils/img/icono.svg" rel="icon">
 </head>
 
 <body class="container">
     <header>
-        <img class="header-logo" src="img/logotipo.svg">
+        <img class="header-logo" src="/src/utils/img/logotipo.svg">
         <div class="header-i">
         <i class="fa-solid fa-user"></i><i class="fa-solid fa-cart-shopping"></i>
         </div>
     </header>
-    <nav class="navbar">
-        <button type="button" class="collapsible"><i class="fa-solid fa-bars"></i></button>
-        <div class="content">
-            <a href="catalogo.html">Catálogo</a>
-            <a href="reservas.html">Reservas</a>
-            <a href="actividades.html">Actividades</a>
+    <nav>
+        <!--Menu responsive-->
+        <input type="checkbox" id="chk-menu">
+        <label for="chk-menu" class="btn-menu">
+            <img src="/src/utils/img/logoflor.svg" width="22px" >
+            <img src="/src/utils/icons/bx-menu.svg" width="22px">
+            <input class="logo-search" type="text">
+            <button class="boton"><i class="fa-solid fa-magnifying-glass" width="22px"></i></button></input>
+
+            <i class="fa-solid fa-user icon1" width="22px"></i><i class="fa-solid fa-cart-shopping icon1" width="22px"></i>
+        </label>
+        <div class="items">
+            <a href="formulario.html" class="item">Catálogo</a>
+            <a href="formulario.html" class="item">Reservas</a>
+            <a href="formulario.html" class="item">Actividades</a>
+            <div class="busqueda">
+                <input class="logo-search2" type="text">
+                <button class="boton2"><i class="fa-solid fa-magnifying-glass" width="22px"></i></button></input>
+            </div>  
         </div>
+  </nav>
+   <article class="card">
+    <img src="/src/utils/img/usuariofoto.png" alt="perfil-img" class="card-img">
+           <div class="card-body">
+                <h2 class="card-text">Marcos Lopez</h2>
+                <p >Me encanta perderme en las letras con mi buen café</p>
+           </div>
+   </article> 
+
+   <div class="contenido">
+       <div class="contenido2">
+            <div class="card-generos">
+                <h3>TUS GÉNEROS FAVORITOS <img src="/src/utils/icons/iconofav.svg" width="22px"></h3>
+                <p>Aventura </p>
+                <p>Terror</p>
+                <p>Novela</p>
+            </div>
+
+            <div class="card-deseos">
+                <h3>LISTA DE DESEOS</h3>
+                <p>El principito-Antoine de Saint <img  class="icon1" src="/src/utils/icons/icondes.svg" width="22px"></p>
+                <p>Callejón sin salida-Black Pierce <img class="icon2" src="/src/utils/icons/icondes.svg" width="22px"></p>
+            </div>
+       </div>
+        
+        <div class="frase">
+            <h3>TUS FRASES FAVORITAS <img src="/src/utils/img/bx-book-open 1libro.png"></h3>
+            <div class="card-frases">
+                <div class="card-frase1">
+                    <p>“Los lectores están en la libertad de formar su propio criterio en lo que a ética y valores se  refiere” A puro pulso.</p>
+                </div>
+                <div class="card-frase2">
+                    <p>“El unico deber que tenemos con la historia es volverla a escribir a puro pulso”</p>
+                </div>
+                <div class="card-frase3">
+                    <p>+</p>
+                </div>
+            </div>        
+        </div>      
+   </div>
+
        
-        <div class="navbar-search">
-        <input type="search" name="search" id="search" placeholder="Buscar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </nav>
+   
 
+    <footer class="footer">
+        <div class="foot1">
+            <img src="/src/utils/img/logofooter.svg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis vitae illo fuga beatae ipsa quisquam dolor voluptates perspiciatis.</p>
+        </div>
 
-<footer>
-        <div class="foot">
-            <img src="img/logofooter.svg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis vitae illo fuga beatae ipsa quisquam dolor voluptates perspiciatis? Itaque illum ipsa cum eligendi! Architecto facilis cupiditate eaque aperiam eveniet.</p>
+        <div class="foot2">
+            <h4>Acerca de Café y Letras</h4> 
+            <a href="">Sobre Nosotros</a> 
+            <a href="">Preguntas frecuentes</a>
         </div>
-        <div class="foot">
-            <h4>Acerca de Café y Letras</h4> <a href="">Sobre Nosotros</a> <a href="">Preguntas frecuentes</a>
-        </div>
-        <div class="foot">
-            <h4>Contáctanos</h4>
-            <p><i class="fa-brands fa-whatsapp"></i>  +57 3000000000</p>
-            <p><i class="fa-solid fa-envelope"></i>  info@cafeyletras.com</p>
-            <p><i class="fa-solid fa-location-dot"></i>  Calle 15 #45a-08</p>
-        </div>
-        <div class="foot">
+
+        <div class="foot3">
             <h4>Síguenos</h4>
             <i class="fa-brands fa-instagram socialnet"></i>
             <i class="fa-brands fa-facebook socialnet"></i>
             <i class="fa-brands fa-twitter socialnet"></i>
         </div>
 
-</footer>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-        </script>
+        <div class="foot4">
+            <h4>Contáctanos</h4>
+            <p><i class="fa-brands fa-whatsapp"></i>  +57 3000000000</p>
+            <p><i class="fa-solid fa-envelope"></i>  info@cafeyletras.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>  Calle 15 #45a-08</p>
+        </div>
+    </footer>
+    <div class="parte-abajo">
+    <h5>©2022 CAFÉ Y LETRAS</h5>
+    <P>Terminos y condiciones</P>
+    <P>Avisos de privacidad</P>
+</div>
 </body>
 </html>
-</body>
-</html>
+   
    
