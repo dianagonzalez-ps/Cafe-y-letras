@@ -390,6 +390,95 @@ footer i{
    
 }
 
+ 
+/*---------------- MODAL ----------------------*/
+.background-aviso{
+    background-color:rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.cont-aviso{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--crema);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    bottom:10%;
+    left: 20%;
+    right: 20%;
+}
+.cont-aviso i{
+    font-size: 40px;
+}
+.cont-aviso h4{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.cont-aviso-boton{
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+}
+.aviso-a, .aviso-b{
+    font-weight: bold;
+    height: 2rem;
+    color: var(--cafe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+    padding: 1rem;
+    max-width: 120px;
+}
+
+.aviso-a a {
+    color: var(--cafe);
+}
+.aviso-b a {
+    color: var(--crema);
+}
+.aviso-a{
+    background-color: var(--cafeclaro);
+    border: 2px solid var(--cafe);
+    border-radius:5px ;
+    width: 90%;
+}
+.aviso-a:hover{
+    background-color:var(--verdeclaro);
+}
+.aviso-b{
+    background-color: var(--verdeoscuro);
+    border: 2px solid var(--verdeoscuro);
+    border-radius:5px;
+    width: 90%;
+}
+.aviso-b:hover{
+background-color: var(--verdeclaro);
+}
+
+.button-reser {
+    text-align: center;
+        cursor: pointer;
+        margin: 2rem auto;
+        padding: 1rem 5rem;
+        max-width: 200px;
+        width: 100%;
+        font-weight: 800;
+        background-color: var(--verdeoscuro);
+        color: var(--verdeclaro);
+        border-radius: 5px;
+}
+.button-reser a {
+    color: var(--crema);
+}
 
 @media screen and (max-width:768px) and (min-width:128px) {
     #d-header-one{
