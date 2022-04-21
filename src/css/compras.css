@@ -300,6 +300,61 @@ header label{
     font-size: 15px;
 }
 
+.shop-box {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--beige);
+}
+.shop-item {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.shop-item textarea {
+    margin: 1rem auto;
+}
+.shop-item p {
+    margin: 1rem;
+}
+.shop-cart {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.shop-cart img {
+    margin-right: 1rem;
+    max-width: 100px;
+    width: 100%;
+}
+.shop-cart-box h5{
+    margin: 1rem 0;
+}
+.shop-cart-box button {
+    padding: 0.5rem 1rem;
+    color: var(--verdeclaro);
+    background-color: var(--verdeoscuro);
+}
+.shop-button {
+    cursor: pointer;
+    margin: 2rem auto;
+    padding: 1rem 5rem;
+    max-width: 300px;
+    width: 100%;
+    font-weight: 800;
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+    border-radius: 5px;
+}
+.form-shop {
+    background-color: var(--beige);
+}
+.shop-box-second {
+    background-color: var(--crema);
+}
+
 /*------------------------------ FOOTER -----------------------*/
 
 
@@ -368,6 +423,9 @@ footer i{
             background-color: var(--verdeoscuro);
             color: var(--verdeclaro);
             height: fit-content; 
+        }
+        .shop-item {
+            display: flex;
         }
 }
 

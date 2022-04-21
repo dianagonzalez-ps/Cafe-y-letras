@@ -82,29 +82,62 @@
     </div>
 
 <main>
-    <section class="shop-box">
+    <article class="shop-box">
+        <form class="form-shop" name="form" action="../index.html" method="get" target="_self"
+                autocomplete="autocomplete" novalidate>
+                <h3>Registra tus datos para realizar una reservación gratuita</h3>
+                <div class="form-box">
+                    <div class="form-item">
+                    <label for="name" class="label">Nombre completo</label>
+                    <input name="name" id="name" type="text" placeholder=" Nombre"></div>
+                    <div class="form-item">
+                    <label for="identificacion" class="label">Numero de identificación</label>
+                    <input name="identificacion" id="identificacion" type="text" placeholder=" Identificación"></div>
+                    <div class="form-item">
+                    <label for="telephone" class="label">Ingresa tu teléfono móvil</label>
+                    <input name="telephone" id="telephone" type="text" placeholder=" Número contacto"></div>
+                    <div class="form-item">
+                    <label for="email" class="label">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder=" Ingrese su correo"></div>
+                    <div class="form-item">
+                    <label for="date" class="label">Fecha de reservación</label>
+                    <input type="date" name="date" id="date"></div>
+                    <div class="form-item">
+                    <label for="observacion">Observaciones</label>
+                    <textarea rows="3" cols="30" name="observaciones"
+                        placeholder=" Observaciones (número de personas, actividad a realizar)"></textarea></div>
+                </div>
+            </form>
+        </article>
+        <article class="shop-box shop-box-second">
         <h2>CARRO DE COMPRAS</h2>
         <hr>
         <div class="shop-cart">
             <img src="../utils/img/librocompra.svg">
-            <div class="shop-cart-box"><h4>Misión Economía</h4>
+            <h4>Misión Economía</h4>
             <h5>Mariana Mazzucato</h5>
-            <button> -  1  + </button></div>
             <h4>$40.000</h4>
         </div>
         <hr>
-        <div class="shop-item">
-            <h3>INSTRUCCIONES ESPECIALES PARA EL ENVÍO</h3>
-            <textarea rows="4" cols="40" name="observaciones" placeholder=" Observaciones"></textarea>
+        <div class="shop-item-second">
+            <input type="gift-card" name="gift-card" id="gift-card" placeholder=" Tarjeta de regalo">
+            <button>Usar</button>
         </div>
         <hr>
-        <div class="shop-item">
-            <h3>SUBTOTAL</h3><h2>$40.000</h2>
-            <p>Los códigos de descuento, los costes de envío y los impuestos se añaden durante el pago.</p>
-            <button class="shop-button">FINALIZAR PEDIDO</button>
+        <div class="shop-item-second">
+            <h3>SUBTOTAL</h3>
+            <h2>$40.000</h2>
         </div>
-        
-    </section>
+        <div class="shop-item-second">
+            <h3>Envío</h3>
+            <h2>$10.000</h2>
+            <hr>
+        </div>
+        <div class="shop-item-second">
+            <h3>TOTAL</h3>
+            <h2>$50.000</h2>
+        </div>
+    </article>
 </main>
 
     <footer>
