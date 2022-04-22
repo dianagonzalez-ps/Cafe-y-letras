@@ -599,14 +599,17 @@ width: 80%;
     display: grid;
     align-items: center;
     text-align: left;
-    background-color: var(--verdeoscuro);
-    color: var(--verdeclaro);
+    background-color: #38470B;
+    color: rgb(180, 198, 166);
     height: fit-content;
     grid-template-areas: 
     "foot1"
     "foot2"
     "foot3"
     "foot4";   
+}
+.footer i {
+    color: rgb(180, 198, 166);
 }
 .foot1{
     grid-area: foot1;
