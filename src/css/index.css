@@ -506,13 +506,13 @@ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.344);
     text-align: center;
 }
 
-.cards .card .content .img{
+.cards .card .content .img-c{
     height: 260px;
     width: 200px;
     margin-bottom: 14px;
 }
 
-.card .content .img img{
+.card .content .img-c img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -653,11 +653,11 @@ display: none
 .background-alert{
     position: absolute;
     width: 100%;
-    height: 500%;
+    height: 485%;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+    z-index: 2000;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -669,7 +669,7 @@ display: none
     width: 100%;
     background: #FFFEF2;
     position: absolute;
-    top: 200%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2rem;
@@ -805,14 +805,30 @@ display: none;
     justify-content: center;
 }
 
+#imgTap:checked~.inner-part .img {
+    height: 370px;
+    width: 850px;
+    z-index: 99;
+    margin-top: 10px;
+    transition: .3s .2s ease-in;}
 
 
-
+    .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0;
+        transition: .6s;
+        border-radius: 5px;
+    }
 
 .inner-part img {
     height: 150px;
     width: 100px;
     object-fit: cover;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 #tap-one:checked~.inner-part .img-one, #tap-two:checked~.inner-part .img-two, #tap-three:checked~.inner-part .img-three, #tap-four:checked~.inner-part .img-four {
@@ -876,7 +892,8 @@ display: none;
 }
 
 .cart button:hover {
-    background: linear-gradient( 50deg, #5f0a2b 0%, #0d0d23);
+    background: #B4C6A6;
+    color: #38470B;
 }
 
 .cart-sliders {
@@ -988,7 +1005,9 @@ input[type="radio"], input[type="checkbox"] {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.344);
 }
 
-
+.img-box{
+    border-radius: 5px;
+}
 
 
 
@@ -1229,7 +1248,10 @@ color: #B4C6A6;
 }
 
 
-
+.foot1 img{
+    max-width: 190px;
+    width: 100%;
+}
 
 .foot1{
     grid-area: foot1;
@@ -1259,10 +1281,8 @@ color: #B4C6A6;
 .foot2 a{
 color: #B4C6A6;
 }
-.foot img {
-    max-width: 180px;
-    width: 100%;
-}
+
+
 .foot a {
     text-decoration: none;
     color: #B4C6A6;
@@ -1503,14 +1523,7 @@ margin-left: 70px;
 
 
 @media screen and (min-width:1024px) {
-    .container{
-        grid-template-areas: 
-        "header"
-        "nav"
-        "wrapper"
-        "footer"
-        "parte-abajo";
-    }
+
     
 
     .footer{
@@ -1518,9 +1531,7 @@ margin-left: 70px;
         "foot1 foot2 foot4 foot3"
     }
     
-    .foot1 img{
-        width: 190px;
-    }
+
     .foot1, .foot2, .foot3, .foot4{
         width: 220px;
         align-items: flex-start;
@@ -1630,6 +1641,16 @@ margin-left: 70px;
         padding: 1rem;
     }
 
+    .background-alert{
+        height: 510%;
+    }
+
+
+    .alert-box{
+        top: 150%;
+    }
+
+
 
 }
 
@@ -1639,6 +1660,14 @@ margin-left: 70px;
         margin: 0 3.8rem;
     }
 
+    .background-alert{
+        height: 523%;
+    }
+
+
+    .alert-box{
+        top: 150%;
+    }
 
 
 
