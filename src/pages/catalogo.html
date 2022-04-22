@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <script src="https://kit.fontawesome.com/f25c3ae372.js" crossorigin="anonymous"></script>
+    <title>Café Literario</title>
+</head>
+<body>
+    <main>
+    <header>
+        <a href="index.html" class="m-logo"><img src="../utils/img/logo.svg"></a>
+        <div class="search">
+            <div class="search_wrap">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="Buscar">
+                    <div class="btn btn_common">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="b-shop" href="../pages/compras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <input type="checkbox" id="menu-bar" hidden>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+        <nav class="m-navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/login.html">Login</a></li>
+                <li><a href="./pages/catalogo.html">Catalogo +</a>
+                    <ul>
+                        <li><a href="./pages/ninios.html">Ninos</a></li>
+                        <li><a href="./pages/adultos.html">Adultos</a></li>
+                        <li><a href="./pages/hogar.html">Hogar</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/reservas.html">Reservas</a></li>
+                <li><a href="./pages/actividades.html">Actividades</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="d-header-one">
+    <div class="d-header-one-nav">
+    <img src="../utils/img/logotipo.svg" alt="logo">
+    <a href="./pages/login.html"><i class="fa-solid fa-user"></i></a>
+    <a class="b-shop" href="./pages/compras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+    <div id="d-header-second">
+        <div class="d-header-second-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/login.html">Login</a></li>
+                    <li><a href="./pages/catalogo.html">Catalogo +</a>
+                        <ul>
+                            <li><a href="./pages/ninios.html">Ninos</a></li>
+                            <li><a href="./pages/adultos.html">Adultos</a></li>
+                            <li><a href="./pages/hogar.html">Hogar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/reservas.html">Reservas</a></li>
+                    <li><a href="./pages/actividades.html">Actividades</a></li>
+        </ul>
+        </div>
+        <div class="search2">
+            <div class="search_wrap2">
+                <div class="search_box2">
+                    <input type="text" class="input" placeholder="Buscar">
+                    <div class="btn btn_common2">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slider-all">
+    <input type="radio" id="1" name="img-slide" hidden>
+    <input type="radio" id="2" name="img-slide" hidden>
+    <input type="radio" id="3" name="img-slide" hidden>
+    <div class="slide">
+        <div class="item-slide">
+            <img src="../utils/img/Group 101.png">
+        </div>
+        <div class="item-slide">
+            <img src="../utils/img/pexels-dominika-roseclay-894612.jpg">
+        </div>
+        <div class="item-slide">
+            <img src="../utils/img/pexels-lisa-fotios-1485114.jpg">
+        </div>
+    </div>
+    <div class="pagination">
+        <label class="pagination-item" for="1">
+        </label>
+        <label class="pagination-item" for="2">
+        </label>
+        <label class="pagination-item" for="3">
+        </label>
+    </div>
+</div>
+
+<div class="background-mobile_card">
+    <img src="../utils/img/Mask group.svg">
+    <h1>RECOMENDADOS</h1>
+<div class="mobile-card">
+    <input type="radio" name="select" id="tap-one" checked>
+    <input type="radio" name="select" id="tap-two">
+    <input type="radio" name="select" id="tap-three">
+    <input type="radio" name="select" id="tap-four">
+    <input type="checkbox" id="imgTap">
+    <div class="cart-sliders">
+    <label for="tap-one" class="tap tap-one"></label>
+    <label for="tap-two" class="tap tap-two"></label>
+    <label for="tap-three" class="tap tap-three"></label>
+    <label for="tap-four" class="tap tap-four"></label>
+    </div>
+    <div class="inner-part">
+        <label for="imgTap" class="img">
+    <img class="img-one" src="../utils/img/Pintor.png">
+</label>
+    <div class="cart cart-one">
+        <div class="title">
+            El pintor de A
+            <h5>Jacob Celnik</h5>
+            <span>$120.000</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam quod dolore magnam saepe soluta nam ab</p>
+        </div>
+        <button>Comprar</button>
+    </div>
+    </div>
+    <div class="inner-part">
+        <label for="imgTap" class="img">
+        <img class="img-two"
+        src="../utils/img/Rectangle 69.png">
+    </label>
+    <div class="cart cart-two">
+        <div class="title">
+            3_ERAS
+            <h5>José Luis Brea</h5>
+            <span>$120.000</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam quod dolore magnam saepe soluta nam ab</p>
+        </div>
+        <button>Comprar</button>
+    </div>
+    </div>
+    <div class="inner-part">
+        <label for="imgTap" class="img">
+        <img class="img-three"
+        src="../utils/img/Rectangle 74.png">
+    </label>
+    <div class="cart cart-three">
+        <div class="title">
+            Crímenes Selectos
+            <h5>Edogawa Rampo</h5>
+            <span>$120.000</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam quod dolore magnam saepe soluta nam ab</p>
+        </div>
+        <button>Comprar</button>
+    </div>
+    </div>
+    <div class="inner-part">
+        <label for="imgTap" class="img">
+        <img class="img-four"
+        src="../utils/img/Ruido.png">
+    </label>
+    <div class="cart cart-four">
+        <div class="title">
+            Ruido
+            <h5>Daniel Kahneman</h5>
+            <span>$120.000</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam quod dolore magnam saepe soluta nam ab</p>
+        </div>
+        <button>Comprar</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+    <img class="container-img_decoration" src="../utils/img/Mask group.svg">
+    <h1>RECOMENDADOS</h1>
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    <div class="main-card">
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Misión Economía</div>
+                        <div class="autor">Mariana Mazzucato</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 69.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">3_ERAS</div>
+                        <div class="autor">José Luis Brea</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 74.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Crímenes Selectos</div>
+                        <div class="autor">Edogawa Rampo</div>
+                        <div class="botton">
+                            <a href="./pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (1).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Antes de Diciembre</div>
+                        <div class="autor">Joana Marcus</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (2).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Un Curso de Meditación: Osho</div>
+                        <div class="autor">Urano</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (3).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">El Demonio de Arbennios</div>
+                        <div class="autor">Bernard Torelló</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="button">
+        <label for="one" class="one active"></label>
+        <label for="two" class="two"></label>
+    </div>
+</div>
+<input type="checkbox" name="" id="checkAlert">
+<div class="background-alert"></div>
+<div class="alert-box">
+    <div class="alert-box_content">
+        <img src="../utils/img/Rectangle 69.png">
+        <div class="alert-box_content_details">
+        <h3>Mision Economia</h3>
+        <h4>Mariana Mazzucato</h4>
+        <h5>Sinopsis</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi, aut ad facilis cupiditate a quos numquam fugiat voluptatum perspiciatis quo explicabo incidunt nobis tenetur qui provident maiores. Eligendi, cumque.</p>
+        <div class="alert-box_btns">
+            <label for="">$120.000</label>
+            <label for="checkAlert">Comprar</label>
+        </div>
+    </div>
+        
+    </div>
+</div>
+
+
+<div class="container-two">
+    <img class="decoration-img-container_two" src="../utils/img/Mask group (1).svg">
+    <h1>LO MÁS VENDIDO</h1>
+    <div class="main-card">
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Misión Economía</div>
+                        <div class="autor">Mariana Mazzucato</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 69.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">3_ERAS</div>
+                        <div class="autor">José Luis Brea</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 74.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Crímenes Selectos</div>
+                        <div class="autor">Edogawa Rampo</div>
+                        <div class="botton">
+                            <a href="./pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (1).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Antes de Diciembre</div>
+                        <div class="autor">Joana Marcus</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (2).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Un Curso de Meditación: Osho</div>
+                        <div class="autor">Urano</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (3).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">El Demonio de Arbennios</div>
+                        <div class="autor">Bernard Torelló</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+<input type="checkbox" name="" id="checkAlert">
+<div class="background-alert"></div>
+<div class="alert-box">
+    <div class="alert-box_content">
+        <img src="../utils/img/Rectangle 69.png">
+        <div class="alert-box_content_details">
+        <h3>Mision Economia</h3>
+        <h4>Mariana Mazzucato</h4>
+        <h5>Sinopsis</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi, aut ad facilis cupiditate a quos numquam fugiat voluptatum perspiciatis quo explicabo incidunt nobis tenetur qui provident maiores. Eligendi, cumque.</p>
+        <div class="alert-box_btns">
+            <label for="">$120.000</label>
+            <label for="checkAlert">Comprar</label>
+        </div>
+    </div>
+        
+    </div>
+</div>
+
+
+<div class="container-three">
+    <img class="container-img_decoration" src="../utils/img/Mask group.svg">
+    <h1>OFERTAS</h1>
+    <div class="main-card">
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Misión Economía</div>
+                        <div class="autor">Mariana Mazzucato</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 69.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">3_ERAS</div>
+                        <div class="autor">José Luis Brea</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 74.png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Crímenes Selectos</div>
+                        <div class="autor">Edogawa Rampo</div>
+                        <div class="botton">
+                            <a href="./pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (1).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Antes de Diciembre</div>
+                        <div class="autor">Joana Marcus</div>
+                        <div class="botton">
+                            <a href="../pages/compras.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (2).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">Un Curso de Meditación: Osho</div>
+                        <div class="autor">Urano</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-c">
+                        <img src="../utils/img/Rectangle 94 (3).png">
+                    </div>
+                    <div class="details">
+                        <div class="name">El Demonio de Arbennios</div>
+                        <div class="autor">Bernard Torelló</div>
+                        <div class="botton"><a href="./pages/actividades.html"></a>
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <label for="checkAlert"><i class="fa-solid fa-eye"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+</div>
+
+<div class="activities-background-mobile_card">
+    <img class="activities-decoration" src="../utils/img/Mask group (1).svg">
+    <h1>LO MÁS VENDIDO</h1>
+<div class="activities-mobile-card">
+    <div class="activities-inner-part">
+    <img class="img-box" src="../utils/img/bruja.png">
+    <div class="box box-one">
+        <div class="title">
+            <h5>Wayward witch</h5>
+            <span>Zoraida Córdova</span>
+            <h5>$120.000</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi, aut ad facilis cupiditate a quos numquam fugiat voluptatum perspiciatis quo explicabo incidunt nobis tenetur qui provident maiores. Eligendi, cumque.</p>
+        </div>
+        <button>COMPRAR</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<div class="activities-background-mobile_card-two">
+    <img src="../utils/img/Mask group.svg">
+    <h1>OFERTAS</h1>
+<div class="activities-mobile-card">
+    <div class="activities-inner-part">
+    <img class="img-box" src="../utils/img/bruja.png">
+    <div class="box box-one">
+        <div class="title">
+            <h5>Wayward witch</h5>
+            <span>Zoraida Córdova</span>
+            <h5>$120.000</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi, aut ad facilis cupiditate a quos numquam fugiat voluptatum perspiciatis quo explicabo incidunt nobis tenetur qui provident maiores. Eligendi, cumque.</p>
+        </div>
+        <button>COMPRAR</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="foot1">
+        <img src="../utils/img/logofooter.svg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis vitae illo fuga beatae ipsa quisquam dolor voluptates perspiciatis.</p>
+    </div>
+
+    <div class="foot2">
+        <h4>Acerca de Café y Letras</h4> 
+        <a href="">Sobre Nosotros</a> 
+        <a href="">Preguntas frecuentes</a>
+    </div>
+
+    <div class="foot3">
+        <h4>Síguenos</h4>
+        <i class="fa-brands fa-instagram socialnet"></i>
+        <i class="fa-brands fa-facebook socialnet"></i>
+        <i class="fa-brands fa-twitter socialnet"></i>
+    </div>
+
+    <div class="foot4">
+        <h4>Contáctanos</h4>
+        <p><i class="fa-brands fa-whatsapp"></i>  +57 3000000000</p>
+        <p><i class="fa-solid fa-envelope"></i>  info@cafeyletras.com</p>
+        <p><i class="fa-solid fa-location-dot"></i>  Calle 15 #45a-08</p>
+    </div>
+</footer>
+<div class="parte-abajo">
+<h5>©2022 CAFÉ Y LETRAS</h5>
+<P>Terminos y condiciones</P>
+<P>Avisos de privacidad</P>
+</div>
+
+</main>
+</body>
+</html>
+
+
+
