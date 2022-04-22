@@ -5,43 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Café literario">
-    <link rel="stylesheet" type="text/css" href="/src/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/src/css/usuario.css">   
+    <link rel="stylesheet" type="text/css" href="../../css/usuario.css">   
     <script src="https://kit.fontawesome.com/4fcb02d961.js" crossorigin="anonymous"></script>
     <title>Cafe y Letras</title>
-    <link type="image/x-icon" href="/src/utils/img/icono.svg" rel="icon">
+    <link type="image/x-icon" href="./src/utils/img/icono.svg" rel="icon">
 </head>
 
 <body class="container">
     <header>
-        <img class="header-logo" src="/src/utils/img/logotipo.svg">
-        <div class="header-i">
-        <i class="fa-solid fa-user"></i><i class="fa-solid fa-cart-shopping"></i>
+        <a href="index.html" class="m-logo"><img src="../../utils/icons/icono.svg"></a>
+        <div class="search">
+            <div class="search_wrap">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="Buscar">
+                    <div class="btn btn_common">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <nav>
-        <!--Menu responsive-->
-        <input type="checkbox" id="chk-menu">
-        <label for="chk-menu" class="btn-menu">
-            <img src="/src/utils/img/logoflor.svg" width="22px" >
-            <img src="/src/utils/icons/bx-menu.svg" width="22px">
-            <input class="logo-search" type="text">
-            <button class="boton"><i class="fa-solid fa-magnifying-glass" width="22px"></i></button></input>
-
-            <i class="fa-solid fa-user icon1" width="22px"></i><i class="fa-solid fa-cart-shopping icon1" width="22px"></i>
-        </label>
-        <div class="items">
-            <a href="formulario.html" class="item">Catálogo</a>
-            <a href="formulario.html" class="item">Reservas</a>
-            <a href="formulario.html" class="item">Actividades</a>
-            <div class="busqueda">
-                <input class="logo-search2" type="text">
-                <button class="boton2"><i class="fa-solid fa-magnifying-glass" width="22px"></i></button></input>
-            </div>  
+        <div>
+            <a class="b-shop" href="./pages/compras.html"><i class="fa-solid fa-cart-shopping" style="color: #38470B"></i></a>
+            <input type="checkbox" id="menu-bar" hidden>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+            <nav class="m-navbar">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./pages/login.html">Login</a></li>
+                    <li><a href="./pages/catalogo.html">Catalogo +</a>
+                        <ul>
+                            <li><a href="./pages/ninios.html">Ninos</a></li>
+                            <li><a href="./pages/adultos.html">Adultos</a></li>
+                            <li><a href="./pages/hogar.html">Hogar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/reservas.html">Reservas</a></li>
+                    <li><a href="./pages/actividades.html">Actividades</a></li>
+                    <li><a href="./login.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+      </div>
+   </header>
+    <div id="d-header-one">
+        <div class="d-header-one-nav">
+        <img src="../../utils/img/logotipo.svg" alt="logo">
+        <a href="login.html"><i class="fa-solid fa-user" style="color: #38470B"></i></a>
+        <a class="b-shop" href="./pages/compras.html"><i class="fa-solid fa-cart-shopping" style="color: #38470B"></i></a>
+    </div>
+        <div id="d-header-second">
+            <div class="d-header-second-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                        <li><a href="login.html">Login </a></li>
+                        <li><a href="./pages/catalogo.html">Catalogo +</a>
+                            <ul>
+                                <li><a href="./pages/ninios.html">Ninos</a></li>
+                                <li><a href="./pages/adultos.html">Adultos</a></li>
+                                <li><a href="./pages/hogar.html">Hogar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./pages/reservas.html">Reservas</a></li>
+                        <li><a href="./pages/actividades.html">Actividades</a></li>  
+            </ul>
+            </div>
+            <div class="search2">
+                <div class="search_wrap2">
+                    <div class="search_box2">
+                        <input type="text" class="input" placeholder="Buscar">
+                        <div class="btn btn_common2">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  </nav>
+    </div>
    <article class="card">
-    <img src="/src/utils/img/usuariofoto.png" alt="perfil-img" class="card-img">
+    <img src="../../utils/img/usuariofoto.png" alt="perfil-img" class="card-img">
            <div class="card-body">
                 <h2 class="card-text">Marcos Lopez</h2>
                 <p >Me encanta perderme en las letras con mi buen café</p>
@@ -49,71 +89,67 @@
    </article> 
 
    <div class="contenido">
-       <div class="contenido2">
-            <div class="card-generos">
-                <h3>TUS GÉNEROS FAVORITOS <img src="/src/utils/icons/iconofav.svg" width="22px"></h3>
-                <p>Aventura </p>
+       <div class="contenido-two">
+            <div class="card_generos">
+                <h3>TUS GÉNEROS FAVORITOS <img src="../../utils/icons/iconofav.svg" width="22px"></h3>
+                <p>Aventura</p>
                 <p>Terror</p>
                 <p>Novela</p>
             </div>
 
-            <div class="card-deseos">
+            <div class="card_deseos">
                 <h3>LISTA DE DESEOS</h3>
-                <p>El principito-Antoine de Saint <img  class="icon1" src="/src/utils/icons/icondes.svg" width="22px"></p>
-                <p>Callejón sin salida-Black Pierce <img class="icon2" src="/src/utils/icons/icondes.svg" width="22px"></p>
+                <p>El principito-Antoine de Saint <img  class="icon-one" src="../..//utils/icons/icondes.svg" width="22px"></p>
+                <p>Callejón sin salida-Black Pierce <img class="icon-two" src="../..//utils/icons/icondes.svg" width="22px"></p>
             </div>
        </div>
         
-        <div class="frase">
-            <h3>TUS FRASES FAVORITAS <img src="/src/utils/img/bx-book-open 1libro.png"></h3>
-            <div class="card-frases">
-                <div class="card-frase1">
+        <div class="pharase">
+            <h3>TUS FRASES FAVORITAS <img src="../../utils/img/bx-book-open 1libro.png"></h3>
+            <div class="card-pharases">
+                <div class="card_pharase_one">
                     <p>“Los lectores están en la libertad de formar su propio criterio en lo que a ética y valores se  refiere” A puro pulso.</p>
                 </div>
-                <div class="card-frase2">
+                <div class="card_pharase_two">
                     <p>“El unico deber que tenemos con la historia es volverla a escribir a puro pulso”</p>
                 </div>
-                <div class="card-frase3">
+                <div class="card_pharase_three">
                     <p>+</p>
                 </div>
             </div>        
         </div>      
    </div>
-
-       
-   
-
     <footer class="footer">
-        <div class="foot1">
-            <img src="/src/utils/img/logofooter.svg">
+        <div class="foot-one">
+            <img src="../../utils/img/logofooter.svg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis vitae illo fuga beatae ipsa quisquam dolor voluptates perspiciatis.</p>
         </div>
 
-        <div class="foot2">
+        <div class="foot-two">
             <h4>Acerca de Café y Letras</h4> 
             <a href="">Sobre Nosotros</a> 
             <a href="">Preguntas frecuentes</a>
         </div>
 
-        <div class="foot3">
+        <div class="foot-three">
             <h4>Síguenos</h4>
             <i class="fa-brands fa-instagram socialnet"></i>
             <i class="fa-brands fa-facebook socialnet"></i>
             <i class="fa-brands fa-twitter socialnet"></i>
         </div>
 
-        <div class="foot4">
+        <div class="foot-four">
             <h4>Contáctanos</h4>
             <p><i class="fa-brands fa-whatsapp"></i>  +57 3000000000</p>
             <p><i class="fa-solid fa-envelope"></i>  info@cafeyletras.com</p>
             <p><i class="fa-solid fa-location-dot"></i>  Calle 15 #45a-08</p>
         </div>
-    </footer>
+    </footer> 
     <div class="parte-abajo">
-    <h5>©2022 CAFÉ Y LETRAS</h5>
-    <P>Terminos y condiciones</P>
-    <P>Avisos de privacidad</P>
-</div>
+        <h5>©2022 CAFÉ Y LETRAS</h5>
+        <P>Terminos y condiciones</P>
+        <P>Avisos de privacidad</P>
+   </div>
 </body>
 </html>
    
