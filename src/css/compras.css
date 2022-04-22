@@ -30,8 +30,11 @@ i{
 a{
     text-decoration: none;
 }
-
 header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -42,43 +45,44 @@ header{
 }
 
 
-.m-navbar{
+header .m-navbar{
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     background: #B4C6A6;
     display: none;
 }
 
-.m-logo img{
+header .m-logo img{
     width: 100%;
     max-width: 30px;
 }
 
-.m-navbar ul{
+header .m-navbar ul{
     list-style: none;
-    padding-left: 1rem;
+
 }
 
-.m-navbar ul li{
+
+header .m-navbar ul li{
     position: relative;
     width: 100%;
 }
 
-.m-navbar ul li a{
+header .m-navbar ul li a{
     padding: 20px;
     display: block;
     color: #38470B;
 }
 
-.m-navbar ul li a:hover{
+header .m-navbar ul li a:hover{
     background: #38470B;
     color: #B4C6A6;
 }
 
-.m-navbar ul li ul{
+header .m-navbar ul li ul{
     position: relative;
     left: 0;
     width: 100%;
@@ -86,18 +90,18 @@ header{
     display: none;
 }
 
-.m-navbar ul li ul li{
+header .m-navbar ul li ul li{
     width: 100%;
     background: #38470B;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.m-navbar ul li ul li a{
+header .m-navbar ul li ul li a{
     color: #B4C6A6;
 }
 
-.m-navbar ul li:focus-within > ul,
-.m-navbar ul li:hover > ul{
+header .m-navbar ul li:focus-within > ul,
+header .m-navbar ul li:hover > ul{
     display: initial;
 }
 
@@ -110,37 +114,34 @@ header label{
 }
 
 /*--------------BARRA DE BUSQUEDA-----------------*/
-.input{
+.search .input{
     border: 0.5px solid rgb(211, 211, 211);
     outline: 1px;
     background: #FFFAFA;
 }
-.search {
-    margin: 0 auto;
-}
 
 .search_wrap{
     width: 100%;
-    max-width:200px ;
+    max-width:175px ;
 }
 
-.search_box{
+.search_wrap .search_box{
     position: relative;
-    width: 200px;
+    width: 175px;
     height: 30px;
 }
 
-.input{
+.search_wrap .search_box .input{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
-.btn{
+.search_wrap .search_box .btn{
     position: absolute;
     top: 0;
     right: 0;
@@ -153,27 +154,30 @@ header label{
     border-bottom-right-radius: 5px;
 }
 
-.btn:hover{
+.search_wrap .search_box .btn:hover{
     background: #B4C6A6;
 }
 
-.btn.btn_common .fas:hover{
+.search_wrap .search_box .btn.btn_common .fas:hover{
     color: #38470B;
 }
 
-.btn.btn_common .fas{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 15px;
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 15px;
 }
 
 
 .b-shop{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
+
+
+
 
 /*-----------------------------------------MENU SECUNDARIO-----------------------------------*/
 
@@ -195,8 +199,9 @@ header label{
 
 
 .d-header-second-nav ul li{
+    position: relative;
     float: left;
-    margin: 0 2rem;
+    margin: 0 1.5rem;
 }
 
 .d-header-second-nav ul li a{
@@ -244,8 +249,6 @@ header label{
 }
 
 .d-header-one-nav img{
-    max-width: 350px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -257,30 +260,36 @@ header label{
 
 /*----------------------------------------BARRA DE BUSQUEDA MENU SECUNDARIO---------------------------*/
 
-.input{
+.search2 .input{
     border: 0.5px solid rgb(211, 211, 211);
     outline: 1px;
     background: #FFFAFA;
 }
 
 .search_wrap2{
-    width: 200px;
+    width: 175px;
 }
 
-.search_wrap2, .search_box2{
+.search_wrap2 .search_box2{
     position: relative;
     width: 230px;
     height: 30px;
 }
 
-.input{
+.search_wrap2 .search_box2 .input{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.btn{
+.search_wrap2 .search_box2 .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 30px;
     height: 100%;
     background: #38470B;
@@ -291,13 +300,13 @@ header label{
 }
 
 
-.btn.btn_common2 .fas{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 15px;
+.search_wrap2 .search_box2 .btn.btn_common2 .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 15px;
 }
 .shop-box-main {
     margin: 0 auto;
@@ -335,15 +344,26 @@ header label{
 .shop-cart {
     padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.shop-cart-second {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .shop-cart img {
     margin-right: 1rem;
-    max-width: 100px;
+    max-width: 120px;
     width: 100%;
 }
-.shop-cart-box h5{
-    margin: 1rem 0;
+.shop-cart-second img {
+    margin-right: 1rem;
+    max-width: 120px;
+    width: 100%;
+}
+.shop-cart-box h5, h4 {
+    margin: 1rem 0.5rem 1rem 0;
 }
 .shop-cart-box button {
     padding: 0.5rem 1rem;
@@ -361,9 +381,19 @@ header label{
     color: var(--verdeclaro);
     border-radius: 5px;
 }
+.shop-button:hover {
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    border: 3px solid var(--verdeoscuro);
+}
 .shop-item-second {
+    margin-top: 1rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+.scs {
+    margin-right: 1rem;
 }
 .form-shop {
     background-color: var(--beige);
@@ -393,47 +423,176 @@ header label{
     height: 2.5rem;
 }
 .form-item input:focus, textarea:focus{
-    border: 3px solid var(--verdeoscuro);
-   
+    border: 3px solid var(--verdeoscuro); 
 }
+.gift-card {
+    height: 2rem;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.single-button {
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    background-color: var(--verdeclaro);
+    color: var(--verdeoscuro);
+    margin-bottom: 1rem;
+}
+
+
+/*---------------- MODAL ----------------------*/
+.background-aviso{
+    background-color:rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+.cont-aviso{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--crema);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    bottom:10%;
+    left: 20%;
+    right: 20%;
+}
+.cont-aviso i{
+    font-size: 40px;
+}
+.cont-aviso h4{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.cont-aviso-boton{
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+}
+.aviso-a, .aviso-b{
+    font-weight: bold;
+    height: 2rem;
+    color: var(--cafe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+    padding: 1rem;
+    max-width: 120px;
+}
+
+.aviso-a a {
+    color: var(--cafe);
+}
+.aviso-b a {
+    color: var(--crema);
+}
+.aviso-a{
+    background-color: var(--cafeclaro);
+    border: 2px solid var(--cafe);
+    border-radius:5px ;
+    width: 90%;
+}
+.aviso-a:hover{
+    background-color:var(--verdeclaro);
+}
+.aviso-b{
+    background-color: var(--verdeoscuro);
+    border: 2px solid var(--verdeoscuro);
+    border-radius:5px;
+    width: 90%;
+}
+.aviso-b:hover{
+background-color: var(--verdeclaro);
+}
+
+
 /*------------------------------ FOOTER -----------------------*/
 
-
-footer {
+.footer {
+    grid-area: footer;
+    width: 100%;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--verdeoscuro);
-    color: var(--verdeclaro);
-    height: fit-content;
-    
-}
-footer i{
-    color: var(--verdeclaro);
-}
-.foot {
-    text-align: center;
-    padding: 1rem;
-    width: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    text-align: left;
+    background-color: #38470B;
+    color: #B4C6A6;
+    height: fit-content;
+    grid-template-areas: 
+    "foot1"
+    "foot2"
+    "foot3"
+    "foot4";   
+}
+
+.footer i{
+color: #B4C6A6;
+}
+
+
+
+
+.foot1{
+    grid-area: foot1;
+}
+.foot2{
+    grid-area: foot2;
+    display: flex;
+    flex-direction: column;
+}
+.foot3{
+    grid-area: foot3;
+}
+.foot4{
+    grid-area: foot4;
+}
+
+.hr-foot{
+    margin: 10px;
+}
+
+.foot1, .foot2, .foot3, .foot4{
+    margin-bottom: 1rem;
+    width: auto;
+    line-height: 25px;
+    border-bottom: 2px solid #B4C6A6;
+}
+.foot2 a{
+color: #B4C6A6;
 }
 .foot img {
-    max-width: 200px;
+    max-width: 130px;
     width: 100%;
 }
 .foot a {
     text-decoration: none;
-    color: var(--verdeclaro);
+    color: #B4C6A6;
+    line-height: 25px;
 }
-.foot-item {
-    margin-top: 1rem;
+.parte-abajo{
+    grid-area: parte-abajo;
+    background-color: #B4C6A6;
+    color: #38470B;
+    width: 100%;
+    height: 100px;
+    line-height: 30px;
+    padding: 5px 27px;
 }
-.socialnet {
-    font-size: larger;
-    margin-top: 1rem;
-}
+
+
+
+
+
+
+
 
 
 
@@ -473,6 +632,47 @@ footer i{
         }
     
 }
+@media screen and (min-width:1024px) {
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "wrapper"
+        "footer"
+        "parte-abajo";
+    }
+    
+
+    .footer{
+        grid-template-areas:
+        "foot1 foot2 foot4 foot3"
+    }
+    
+    .foot1 img{
+        width: 180px;
+    }
+    .foot1, .foot2, .foot3, .foot4{
+        width: 220px;
+        align-items: flex-start;
+        margin: 1rem;
+        height: 200px;
+        border-bottom: none;
+        line-height: 2.5rem;
+    }
+    .foot1{
+        line-height: 1.3rem;
+    }
+
+    .foot2 h4 , .foot3 h4, .foot4 h4{
+        border-bottom: 2px solid #B4C6A6;
+    } 
+
+.parte-abajo{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }    
+}
 
 
 @media screen and (min-width:1200px){
@@ -487,7 +687,7 @@ footer i{
         display: flex;
      }
 
-    .shop-box-second, .shop-cart {
+    .shop-box-second {
         display: flex;
         flex-direction: column;
     }

@@ -1418,7 +1418,10 @@ color: #B4C6A6;
         font-size: 30px;
     }
 
-
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
 
 
 }
