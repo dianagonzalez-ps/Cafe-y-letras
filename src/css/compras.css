@@ -299,13 +299,26 @@ header label{
     color: #fff;
     font-size: 15px;
 }
-
-.shop-box {
+.shop-box-main {
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
     padding: 3rem;
     background-color: var(--beige);
+}
+.shop-box {
+    margin: 0 auto;
+    max-width: min-content;
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--beige);
+}
+.shop-box-second {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--crema);
 }
 .shop-item {
     padding: 1rem 0;
@@ -348,13 +361,41 @@ header label{
     color: var(--verdeclaro);
     border-radius: 5px;
 }
+.shop-item-second {
+    display: flex;
+    justify-content: space-between;
+}
 .form-shop {
     background-color: var(--beige);
 }
-.shop-box-second {
-    background-color: var(--crema);
+.form-box {
+    color: var(--cafe);
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.form-item, .form-item-first {
+    margin: 1rem;
+}
+.form-item-first {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-item input, select {
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: 0.2rem auto;
+    width: 60vw;
+    height: 2.5rem;
+}
+.form-item input:focus, textarea:focus{
+    border: 3px solid var(--verdeoscuro);
+   
+}
 /*------------------------------ FOOTER -----------------------*/
 
 
@@ -427,6 +468,10 @@ footer i{
         .shop-item {
             display: flex;
         }
+        .form-item input, select {
+            width: 50vw;
+        }
+    
 }
 
 
@@ -437,5 +482,13 @@ footer i{
     .container {
         margin: 0 auto;
         max-width: 1400px;
+    }
+    main {
+        display: flex;
+     }
+
+    .shop-box-second, .shop-cart {
+        display: flex;
+        flex-direction: column;
     }
 }
