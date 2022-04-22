@@ -1254,6 +1254,7 @@ color: #B4C6A6;
 .inner-part img {
     height: 220px;
     width: 180px;
+    border-radius: 5px;
 }
 
 .activities-background-mobile_card{
@@ -1299,9 +1300,21 @@ color: #B4C6A6;
     margin: 2rem 1rem; 
 }
 
+.activities-background-mobile_card-two .activities-mobile-card .activities-inner-part img{
+    height: 220px;
+    width: 180px;
+
+}
+
+
+
+
+
 .activities-mobile-card{
     height: 300px;
 }
+
+
 
 .activities-inner-part img{
     height: 220px;
@@ -1607,7 +1620,7 @@ margin-left: 70px;
     }
 
     .background-alert{
-        height: 469%;
+        height: 4%;
     }
 
 
