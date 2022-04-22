@@ -1,0 +1,1397 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --whitecreme:#FFFEF2;
+    --lightyellow:#FFFDDE; 
+    --wheat:#F1D6AB;
+    --pink:rgb(226, 194, 185);
+    --lightbrown:rgb(160, 133, 91);
+    --lightgreen:rgb(180, 198, 166); 
+    --darkgreen:#38470B;
+    --darkbrown:#41341F;
+}
+
+
+html{
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(226, 194, 185, 0.6);   
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: #38470B;
+    font-size: 22px;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #FFFEF2;  
+
+}
+
+header .m-navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background: #B4C6A6;
+    display: none;
+}
+
+header .m-logo img{
+    width: 100%;
+    max-width: 30px;
+}
+
+header .m-navbar ul{
+    list-style: none;
+
+}
+
+
+header .m-navbar ul li{
+    position: relative;
+    width: 100%;
+}
+
+header .m-navbar ul li a{
+    padding: 20px;
+    display: block;
+    color: #38470B;
+}
+
+header .m-navbar ul li a:hover{
+    background: #38470B;
+    color: #B4C6A6;
+}
+
+header .m-navbar ul li ul{
+    position: relative;
+    left: 0;
+    width: 100%;
+    background: #B4C6A6;
+    display: none;
+}
+
+header .m-navbar ul li ul li{
+    width: 100%;
+    background: #38470B;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .m-navbar ul li ul li a{
+    color: #B4C6A6;
+}
+
+header .m-navbar ul li:focus-within > ul,
+header .m-navbar ul li:hover > ul{
+    display: initial;
+}
+
+header label{
+    cursor: pointer;
+}
+
+#menu-bar:checked ~ .m-navbar{
+    display: initial;
+}
+
+/*--------------BARRA DE BUSQUEDA-----------------*/
+.search .input{
+    border: 0.5px solid rgb(211, 211, 211);
+    outline: 1px;
+    background: #FFFAFA;
+}
+
+.search_wrap{
+    width: 100%;
+    max-width:175px ;
+}
+
+.search_wrap .search_box{
+    position: relative;
+    width: 175px;
+    height: 30px;
+}
+
+.search_wrap .search_box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.search_wrap .search_box .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: #38470B;
+    z-index: 1000;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search_wrap .search_box .btn:hover{
+    background: #B4C6A6;
+}
+
+.search_wrap .search_box .btn.btn_common .fas:hover{
+    color: #38470B;
+}
+
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 15px;
+}
+
+.b-shop{
+    margin-right: 0.5rem;
+}
+
+
+/*-----------------------------------------MENU SECUNDARIO-----------------------------------*/
+
+#d-header-second{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #B4C6A6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+}
+
+.d-header-second-nav ul{
+    list-style: none;
+}
+
+.d-header-second-nav ul li{
+    position: relative;
+    float: left;
+    margin: 0 1.5rem;
+}
+
+.d-header-second-nav ul li a{
+    padding: 1.5rem;
+    color: #38470B;
+    display: block;
+}
+
+.d-header-second-nav ul li a:hover{
+    background: #38470B;
+    color: #B4C6A6;
+}
+
+.d-header-second-nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #B4C6A6;
+    display: none;
+}
+
+
+.d-header-second-nav ul li ul li{
+    width: 100%;
+    border-top:  1px solid rgba(0, 0, 0, .1);
+    margin: 0;
+}
+
+.d-header-second-nav ul li:focus-within > ul,
+.d-header-second-nav ul li:hover > ul{
+    display: initial;
+}
+
+
+#d-header-one{
+    position: static;
+    width: 100%;
+}
+
+.d-header-one-nav{
+    background: #FFFEF2;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.d-header-one-nav img{
+    margin: 0 auto;
+}
+
+.d-header-one-nav i{
+    margin-left: 1rem;
+    font-size: 25px;
+}
+
+
+/*----------------------------------------BARRA DE BUSQUEDA MENU SECUNDARIO---------------------------*/
+
+.search2 .input{
+    border: 0.5px solid rgb(211, 211, 211);
+    outline: 1px;
+    background: #FFFAFA;
+}
+
+.search_wrap2{
+    width: 175px;
+}
+
+.search_wrap2 .search_box2{
+    position: relative;
+    width: 230px;
+    height: 30px;
+}
+
+.search_wrap2 .search_box2 .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.search_wrap2 .search_box2 .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: #38470B;
+    z-index: 1000;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.search_wrap2 .search_box2 .btn.btn_common2 .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 15px;
+}
+
+/*----------Slider---------*/
+
+.slider{
+    width: 100%;
+    margin: auto;
+    height: 150px;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: slider 20s infinite;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img{
+    width: 100%;
+
+}
+
+@keyframes slider{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.captActivities{
+    font-family: 'Domine', serif;
+    color: var(--darkgreen);
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 12px;
+
+}
+
+.calendarCont{
+    margin: 2em auto;
+    width: 285px;
+    border: 1.2px solid var(--darkbrown);
+    border-radius: 15px;
+    padding: 0.8em;
+    background-color: var(--lightyellow);
+
+}
+
+.tittleCalendar{
+    text-align: center;
+    margin: .2em 0;
+    color: #38470B;
+    font-family: 'Domine', serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day{
+    list-style: none;
+    text-align: right;
+    font-size: 13px;
+    padding: .2em .4em;
+    padding-top: 1em;
+    color: var(--darkbrown);
+    font-family: 'Domine', serif;
+    color: var(--darkbrown);
+    font-weight: 500;   
+    cursor: pointer;
+    position: relative;
+    z-index: 1; 
+}
+
+.day:hover{
+    background: var(--lightgreen);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.dayName{
+    background: var(--lightgreen);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.first-day{
+    grid-column-start: 5;
+}
+
+
+/*-------------------Cards------------------*/
+
+.tittleActivities img{
+width: 80%;
+}
+
+.captActivities{
+    font-family: 'Domine', serif;
+    font-size: 13px;
+}
+.sectionEvents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cardsEvents{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 120px;
+    background: rgba(160, 133, 91, 0.6);
+    margin-right: 8px;
+    margin-left: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsEvents img{
+    width: 120px;
+    height: 80px;
+    border-radius: 10%;
+    
+}
+
+.tDate{
+    font-size: 12px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 12px;
+    color: var(--darkbrown);
+}
+
+.tTxt{
+    font-size: 10px;
+    color: var(--darkbrown);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Domine', serif;
+}
+
+.sectionClubs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tactivites{
+    margin-top: 50px;
+    font-family: 'Domine', serif;
+    text-align: center;
+    color: var(--darkgreen);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.cardsClubs{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    background: var(--pink);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsClubs img{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 110px;
+    border-radius: 10%;
+    
+}
+
+.cardsClubs h4{
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 10px;
+    color: var(--darkgreen);
+}
+
+.btn_act{
+    background: var(--darkgreen);
+    color: var(--whitecreme);
+    width: 100px;
+    height: 22px;
+    font-size: 14px;
+    border: 1px solid var(--darkgreen);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+}
+
+.btn_act i{
+    color: var(--whitecreme);
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.sectionEvents_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cardsEvents_2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 130px;
+    background: rgba(160, 133, 91, 0.6);
+    margin-right: 8px;
+    margin-left: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsEvents_2 img{
+    margin-left: 7px;
+    margin-top: 20px;
+    width: 120px;
+    border-radius: 10%; 
+}
+
+.sectcardsclubs_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardsClubs_2{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    background: var(--wheat);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsClubs_2 img{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 130px;
+    border-radius: 10%;
+}
+
+.cardsClubs_2 h4{
+    font-family: 'Domine', serif;
+    text-align: center;
+    font-size: 12px;
+    color: var(--darkgreen);
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    align-items: center;
+    text-align: left;
+    background-color: var(--verdeoscuro);
+    color: var(--verdeclaro);
+    height: fit-content;
+    grid-template-areas: 
+    "foot1"
+    "foot2"
+    "foot3"
+    "foot4";   
+}
+.foot1{
+    grid-area: foot1;
+}
+.foot2{
+    grid-area: foot2;
+    display: flex;
+    flex-direction: column;
+}
+.foot3{
+    grid-area: foot3;
+}
+.foot4{
+    grid-area: foot4;
+}
+
+.hr-foot{
+    margin: 10px;
+}
+.foot1, .foot2, .foot3, .foot4{
+    margin-bottom: 1rem;
+    width: auto;
+    line-height: 25px;
+    border-bottom: 2px solid var(--verdeclaro);
+}
+.foot2 a{
+   color: var(--verdeclaro);
+}
+.foot img {
+    max-width: 180px;
+    width: 100%;
+}
+.foot a {
+    text-decoration: none;
+    color: var(--verdeclaro);
+    line-height: 25px;
+}
+.parte-abajo{
+    grid-area: parte-abajo;
+    background-color: var(--verdeclaro);
+    color: #38470B;
+    width: 100%;
+    height: 100px;
+    line-height: 30px;
+    padding: 5px 27px;
+}
+
+
+/*---------Resoluciones----------*/
+
+@media screen and (max-width:768px) and (min-width:128px) {
+    #d-header-one{
+        display: none;
+    }
+
+    .d-header-second-nav{
+        display: none;
+    }
+
+    .search2{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .search_wrap .search_box{
+        max-width: 340%;
+        width:600px;
+        margin-left: -13rem;
+    }
+
+    .tittleActivities img{
+        width: 70%;
+    }
+
+    .slider{
+        height: 380px;
+    }
+    
+    
+    .captActivities{
+        font-size: 17px;
+    
+    }
+    
+    .calendarCont{
+        margin: 2em auto;
+        width: 285px;
+        border: 1.2px solid var(--darkbrown);
+        border-radius: 15px;
+        padding: 0.8em;
+        background-color: var(--lightyellow);
+    
+    }
+    
+    .tittleCalendar{
+        text-align: center;
+        margin: .2em 0;
+        color: #38470B;
+        font-family: 'Domine', serif;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .calendar{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+    }
+    
+    .day{
+        list-style: none;
+        text-align: right;
+        font-size: 13px;
+        padding: .2em .4em;
+        padding-top: 1em;
+        color: var(--darkbrown);
+        font-family: 'Domine', serif;
+        color: var(--darkbrown);
+        font-weight: 500;   
+        cursor: pointer;
+        position: relative;
+        z-index: 1; 
+    }
+    
+    .day:hover{
+        background: var(--lightgreen);
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    .dayName{
+        background: var(--lightgreen);
+        font-weight: bolder;
+        padding: 5px;
+    }
+    
+    .first-day{
+        grid-column-start: 5;
+    }
+    
+    
+    /*-------------------Cards------------------*/
+    .sectionEvents{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .cardsEvents{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 200px;
+        background: rgba(160, 133, 91, 0.6);
+        margin-right: 8px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsEvents img{
+        margin-left: 40px;
+        border-radius: 10%;
+        
+    }
+    
+    .tDate{
+        font-size: 14px;
+        text-align: center;
+        margin: 8px;
+        margin-top: 12px;
+        color: var(--darkbrown);
+    }
+    
+    .tTxt{
+        font-size: 12px;
+        color: var(--darkbrown);
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Domine', serif;
+    }
+    
+    .sectionClubs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .tactivites{
+        margin-top: 50px;
+        font-family: 'Domine', serif;
+        text-align: center;
+        color: var(--darkgreen);
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    
+    .cardsClubs{
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+        background: var(--pink);
+        margin-right: 25px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        margin-left: 20px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsClubs img{
+        margin-left: 35px;
+        margin-top: 20px;
+        width: 140px;
+        border-radius: 10%;
+        
+    }
+    
+    .cardsClubs h4{
+        text-align: center;
+        font-family: 'Domine', serif;
+        font-size: 12px;
+        
+    }
+    
+    .btn_act{
+        width: 110px;
+        height: 25px;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .btn_act i{
+        color: var(--whitecreme);
+        font-size: 12px;
+        margin-right: 15px;
+    }
+    
+    .sectionEvents_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .cardsEvents_2{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 200px;
+        background: rgba(160, 133, 91, 0.6);
+        margin-right: 8px;
+        margin-left: 10px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsEvents_2 img{
+        margin-left: 25px;
+        margin-top: 20px;
+        width: 150px;
+        border-radius: 10%; 
+    }
+    
+    .sectcardsclubs_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cardsClubs_2{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background: var(--wheat);
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsClubs_2 img{
+        margin-left: 25px;
+        margin-top: 20px;
+        width: 150px;
+        border-radius: 10%;
+    }
+    
+    .cardsClubs_2 h4{
+        font-family: 'Domine', serif;
+        text-align: center;
+        font-size: 12px;
+        color: var(--darkgreen);
+        margin-bottom: 10px;
+    }
+    
+    
+}
+    
+
+@media screen and (min-width:1024px) {
+header{
+    display: none;
+}
+
+.slider{
+    height: 450px;
+}
+
+
+.captActivities{
+    margin-top: 3rem;
+    font-size: 25px;
+
+}
+
+.calendarCont{
+    width: 380px;
+    height: 350px;
+  
+}
+
+.tittleCalendar{
+    font-size: 20px; 
+}
+
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day{
+    font-size: 20px;
+    
+}
+
+.day:hover{
+    background: var(--lightgreen);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.dayName{
+    background: var(--lightgreen);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.first-day{
+    grid-column-start: 5;
+}
+
+
+/*-------------------Cards------------------*/
+.sectionEvents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cardsEvents{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 200px;
+    background: rgba(160, 133, 91, 0.6);
+    margin-right: 8px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsEvents img{
+    margin-left: 11rem;
+}
+
+.tDate{
+    font-size: 25px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 12px;
+    color: var(--darkbrown);
+}
+
+.tTxt{
+    font-size: 20px;
+    color: var(--darkbrown);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Domine', serif;
+}
+
+.sectionClubs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tactivites{
+    margin-top: 50px;
+    font-family: 'Domine', serif;
+    text-align: center;
+    color: var(--darkgreen);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.cardsClubs{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background: var(--pink);
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-left: 30px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsClubs img{
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 220px;
+    border-radius: 10%;
+    
+}
+
+.cardsClubs h4{
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-size: 15px;
+    
+}
+
+.btn_act{
+    width: 150px;
+    height: 25px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+
+.btn_act i{
+    color: var(--whitecreme);
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.sectionEvents_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cardsEvents_2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 280px;
+    background: rgba(160, 133, 91, 0.6);
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsEvents_2 img{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 220px;
+    border-radius: 10%; 
+}
+
+.sectcardsclubs_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardsClubs_2{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background: var(--wheat);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--lightbrown);
+}
+
+.cardsClubs_2 img{
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 220px;
+    border-radius: 10%;
+}
+
+.cardsClubs_2 h4{
+    font-family: 'Domine', serif;
+    text-align: center;
+    font-size: 20px;
+    color: var(--darkgreen);
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .container{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "wrapper"
+        "footer"
+        "parte-abajo";
+    }
+
+    .footer{
+        grid-template-areas:
+        "foot1 foot2 foot4 foot3"
+    }
+    
+    .foot1 img{
+        width: 190px;
+    }
+    .foot1, .foot2, .foot3, .foot4{
+        width: 220px;
+        align-items: flex-start;
+        margin: 1rem;
+        height: 200px;
+        border-bottom: none;
+        line-height: 2.5rem;
+    }
+    .foot1{
+        line-height: 1.3rem;
+    }
+
+    .foot2 h4 , .foot3 h4, .foot4 h4{
+        border-bottom: 2px solid var(--verdeclaro);
+    } 
+
+.parte-abajo{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }    
+
+}
+
+}
+
+
+
+@media screen and (min-width:1200px){
+    .d-header-second-nav ul li{
+        margin: 0 2.5rem;
+    }
+
+    .slider{
+        height: 500px;
+    }
+    
+    
+    .captActivities{
+        margin-top: 3rem;
+        font-size: 30px;
+    
+    }
+    
+    .calendarCont{
+        width: 400px;
+        height: 380px;
+      
+    }
+    
+    .tittleCalendar{
+        font-size: 25px; 
+    }
+    
+    .calendar{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+    }
+    
+    .day{
+        font-size: 20px;
+        
+    }
+    
+    .day:hover{
+        background: var(--lightgreen);
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    .dayName{
+        background: var(--lightgreen);
+        font-weight: bolder;
+        padding: 5px;
+    }
+    
+    .first-day{
+        grid-column-start: 5;
+    }
+    
+    
+    /*-------------------Cards------------------*/
+    .sectionEvents{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .cardsEvents{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        height: 200px;
+        background: rgba(160, 133, 91, 0.6);
+        margin-right: 8px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsEvents img{
+        margin-left: 11rem;
+    }
+    
+    .tDate{
+        font-size: 25px;
+        text-align: center;
+        margin: 8px;
+        margin-top: 12px;
+        color: var(--darkbrown);
+    }
+    
+    .tTxt{
+        font-size: 20px;
+        color: var(--darkbrown);
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: 'Domine', serif;
+    }
+    
+    .sectionClubs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .tactivites{
+        margin-top: 50px;
+        font-family: 'Domine', serif;
+        text-align: center;
+        color: var(--darkgreen);
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+    .cardsClubs{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        background: var(--pink);
+        margin-right: 25px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        margin-left: 30px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsClubs img{
+        margin-left: 35px;
+        margin-top: 20px;
+        width: 280px;
+        border-radius: 10%;
+        
+    }
+    
+    .cardsClubs h4{
+        text-align: center;
+        font-family: 'Domine', serif;
+        font-size: 20px;
+        
+    }
+    
+    .btn_act{
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    
+    .btn_act i{
+        color: var(--whitecreme);
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    
+    .sectionEvents_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .cardsEvents_2{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 350px;
+        background: rgba(160, 133, 91, 0.6);
+        margin-right: 20px;
+        margin-left: 10px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsEvents_2 img{
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 280px;
+        border-radius: 10%; 
+    }
+    
+    .sectcardsclubs_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cardsClubs_2{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        background: var(--wheat);
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 7px var(--lightbrown);
+    }
+    
+    .cardsClubs_2 img{
+        margin-left: 25px;
+        margin-top: 20px;
+        width: 280px;
+        border-radius: 10%;
+    }
+    
+    .cardsClubs_2 h4{
+        font-family: 'Domine', serif;
+        text-align: center;
+        font-size: 20px;
+        color: var(--darkgreen);
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width:1400px){
+    .d-header-second-nav ul li{
+        margin: 0 3.8rem;
+    }
+}
