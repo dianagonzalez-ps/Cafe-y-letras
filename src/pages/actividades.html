@@ -1,12 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-Es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfc08c0c99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividades.css">
+
     <title>Actividades</title>
 </head>
 <body>
+
+   <header>
+        <a href="index.html" class="m-logo"><img src="../utils/img/img_logo_cafe.png"></a>
+        <div class="search">
+            <div class="search_wrap">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="Buscar">
+                    <div class="btn btn_common">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="b-shop" href="./pages/compras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <input type="checkbox" id="menu-bar" hidden>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+        <nav class="m-navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/login.html">Login</a></li>
+                <li><a href="./pages/catalogo.html">Catalogo</a>
+                    <ul>
+                        <li><a href="./pages/ninios.html">Niños</a></li>
+                        <li><a href="./pages/adultos.html">Adultos</a></li>
+                        <li><a href="./pages/hogar.html">Hogar</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/reservas.html">Reservas</a></li>
+                <li><a href="./pages/actividades.html">Actividades</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="d-header-one">
+    <div class="d-header-one-nav">
+    <img src="../utils/img/logo_cafe_literario.png" alt="logo">
+    <a href="./pages/login.html"><i class="fa-solid fa-user"></i></a>
+    <a class="b-shop" href="./pages/compras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+    <div id="d-header-second">
+        <div class="d-header-second-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/login.html">Login</a></li>
+                    <li><a href="./pages/catalogo.html">Catalogo</a>
+                        <ul>
+                            <li><a href="./pages/ninios.html">Niños</a></li>
+                            <li><a href="./pages/adultos.html">Adultos</a></li>
+                            <li><a href="./pages/hogar.html">Hogar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/reservas.html">Reservas</a></li>
+                    <li><a href="./pages/actividades.html">Actividades</a></li>
+        </ul>
+        </div>
+        <div class="search2">
+            <div class="search_wrap2">
+                <div class="search_box2">
+                    <input type="text" class="input" placeholder="Buscar">
+                    <div class="btn btn_common2">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider">
+    <ul>
+        <li><img src="../utils/img/imgslide_1.svg" alt=""></li>
+        <li><img src="../utils/img/imgslide_2.svg" alt=""></li>
+        <li><img src="../utils/img/imgslide_3.svg" alt=""></li>
+        <li><img src="../utils/img/imgslide_4.svg" alt=""></li>
+    </ul>
+</div>
+
+<div class="tittleActivities">
+    <h4 class="captActivities">Calendario de Actividades</h4>
+    <img src="../utils/img/line.svg" alt="">
+</div>
+
+<div class="vectorCircle"></div>
+
+<div class="calendarCont">
+    <h1 class="tittleCalendar">ABRIL 2022</h1>
+    <ol class="calendar">
+        <li class="day dayName">L</li>
+        <li class="day dayName">M</li>
+        <li class="day dayName">M</li>
+        <li class="day dayName">J</li>
+        <li class="day dayName">V</li>
+        <li class="day dayName">S</li>
+        <li class="day dayName">D</li>
+
+        <li class="day first-day">1</li>
+        <li class="day">2</li>
+        <li class="day">3</li>
+        <li class="day">4</li>
+        <li class="day">5</li>
+        <li class="day">6</li>
+        <li class="day">7</li>
+        <li class="day">8</li>
+        <li class="day">9</li>
+        <li class="day">10</li>
+        <li class="day">11</li>
+        <li class="day">12</li>
+        <li class="day">13</li>
+        <li class="day">14</li>
+        <li class="day">15</li>
+        <li class="day">16</li>
+        <li class="day">17</li>
+        <li class="day">18</li>
+        <li class="day">19</li>
+        <li class="day">20</li>
+        <li class="day">21</li>
+        <li class="day">22</li>
+        <li class="day">23</li>
+        <li class="day">24</li>
+        <li class="day">25</li>
+        <li class="day">26</li>
+        <li class="day">27</li>
+        <li class="day">28</li>
+        <li class="day">29</li>
+        <li class="day">30</li>
+    </ol>
+    
+</div>
+
+<div class="tittleActivities">
+    <h4 class="captActivities">Eventos Destacados del Mes</h4>
+    <img src="../utils/img/line.svg" alt="">
+</div>
+
+<section class="sectionEvents">
+    <div class="cardsEvents">
+            <h4 class="tDate">Abril 21</h4>
+            <img clas="imgevent"src="../utils/img/card_1.svg" alt="card">
+        <h3 class="tTxt">Taller la vida entre las letras</h3>
+        </div>
+    </div>
+
+    <div class="cardsEvents">
+            <h4 class="tDate">Abril 30</h4>
+            <img src="../utils/img/card_2.svg" alt="card">
+        <h3 class="tTxt">Taller la vida entre letras</h3>
+    </div>
+</section>
+
+<div class="tittleActivities">
+    <h3 class="tactivites">ACTIVIDADES</h3>
+    <h4 class="captActivities">Clubes</h4>
+    <img src="../utils/img/line.svg" alt="">
+</div>
+
+<section class="sectionClubs">
+    <div class="cardsClubs">
+        <div class="imgClubs"><img src="../utils/img/card_3.svg" alt=""></div>
+        <h4>Club Explorando Letras</h4>
+        <h4>Niños</h4>
+        <button class="btn_act"><i class="fa-solid fa-eye"></i>Ver más</button>
+    </div>
+    
+
+    <div class="cardsClubs">
+        <div class="imgClubs"><img src="../utils/img/card_4.svg" alt=""></div>
+        <h4>Club Entre Letras</h4>
+        <h4>Jóvenes y Adultos</h4>
+        <button class="btn_act"><i class="fa-solid fa-eye"></i>Ver más</button>
+    </div>
+    
+
+    <div class="cardsClubs">
+        <div class="imgClubs"><img src="../utils/img/card_5.svg" alt=""></div>
+        <h4>Club Sabias Palabras</h4>
+        <h4>Adulto Mayor</h4>
+        <button class="btn_act"><i class="fa-solid fa-eye"></i>Ver más</button>
+    </div>
+   
+</div>
+</section>
+
+<div class="tittleActivities">
+    <h4 class="captActivities">Talleres</h4>
+    <img src="../utils/img/line.svg" alt="">
+</div>
+
+<section class="sectionEvents_2">
+    <div class="cardsEvents_2">
+            <img src="../utils/img/card_6.svg" alt="card">
+        <h3 class="tTxt">Talleres de Lectura</h3>
+        </div>
+    </div>
+
+    <div class="cardsEvents_2">
+        <img src="../utils/img/card_7.svg" alt="card">
+    <h3 class="tTxt">Talleres de Escritura</h3>
+    </div>
+</div>
+</section>
+
+
+<section class="sectionClubs_2">
+
+    <div class="tittleActivities">
+        <h4 class="captActivities">Círculos Temáticos</h4>
+        <img src="../utils/img/line.svg" alt="">
+    </div>
+    
+    <div class="sectcardsclubs_2">
+    <div class="cardsClubs_2">
+        <div class="imgClubs_2"><img src="../utils/img/card_8.svg" alt=""></div>
+        <h4>Poesía</h4>
+    
+    </div>
+
+    <div class="cardsClubs_2">
+        <div class="imgClubs_2"><img src="../utils/img/card_9.svg" alt=""></div>
+        <h4>Ciencia</h4>
+    </div>
+
+    <div class="cardsClubs_2">
+        <div class="imgClubs_2"><img src="../utils/img/card_10.svg" alt=""></div>
+        <h4>Filosofía</h4>
+    </div>
+    
+</section>
+
+<footer class="footer">
+    <div class="foot1">
+        <img src="../utils/img/logofooter.svg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis vitae illo fuga beatae ipsa quisquam dolor voluptates perspiciatis.</p>
+    </div>
+
+    <div class="foot2">
+        <h4>Acerca de Café y Letras</h4> 
+        <a href="">Sobre Nosotros</a> 
+        <a href="">Preguntas frecuentes</a>
+    </div>
+
+    <div class="foot3">
+        <h4>Síguenos</h4>
+        <i class="fa-brands fa-instagram socialnet"></i>
+        <i class="fa-brands fa-facebook socialnet"></i>
+        <i class="fa-brands fa-twitter socialnet"></i>
+    </div>
+
+    <div class="foot4">
+        <h4>Contáctanos</h4>
+        <p><i class="fa-brands fa-whatsapp"></i>  +57 3000000000</p>
+        <p><i class="fa-solid fa-envelope"></i>  info@cafeyletras.com</p>
+        <p><i class="fa-solid fa-location-dot"></i>  Calle 15 #45a-08</p>
+    </div>
+</footer>
+<div class="parte-abajo">
+<h5>©2022 CAFÉ Y LETRAS</h5>
+<P>Terminos y condiciones</P>
+<P>Avisos de privacidad</P>
+</div>
+
+
+
+
+
     
 </body>
 </html>
