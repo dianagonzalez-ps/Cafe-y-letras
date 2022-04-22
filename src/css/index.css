@@ -651,7 +651,7 @@ display: none
 
 /*-------------------------------------------------------------NOVEDADES POP UP--------------------------------------------*/
 .background-alert{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 485%;
     top: 0;
